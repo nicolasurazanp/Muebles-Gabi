@@ -1,0 +1,280 @@
+body {
+    background-color: #FDF7F2;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+header {
+    border-bottom: 8px solid #846D62;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FDF7F2;
+    padding: 0 10px;
+  
+  }
+  
+  .navbar-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .links {
+    justify-content: center;
+    flex-grow: 1;
+  }
+  
+  .links a {
+    display: block;
+    color: #846D62;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    margin: 30px;
+  }
+  
+  .links a:hover {
+    font-size: 18px;
+    font-weight: bold;
+    color: #846D62;
+  }
+  
+  .Logo {
+    width: 140px;
+    height: 120px;
+}
+  
+  .ui.animated.button {
+    background-color: transparent;
+  }
+  
+  /* botones de sala, comedor y combo */
+
+  #btnesCata {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-bottom: 8px solid #846D62;
+}
+
+.image {
+    width: 48%; 
+    margin-bottom: 10px;
+}
+
+.image:last-child {
+    width: 100%; 
+}
+
+img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    height: 500px;
+}
+
+.image a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.image img {
+    transition: filter 0.5s ease;
+    cursor: pointer;
+}
+
+.image .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.image a:hover img {
+    filter: blur(8px);
+}
+
+.image a:hover .title {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Quienes somos*/
+
+.quienesSomos {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+#quienesSomos .container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#quienesSomos h2{
+  margin-top: 0px;
+}
+
+#quienesSomos .texto{
+  width: 50%;
+  text-align: initial;
+  padding: 0px 30px;
+  padding-left: 30px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 70px;
+  color: rgb(132, 109, 98);
+}
+
+#quienesSomos .container {
+  display: flex;
+  align-items: center; 
+  justify-content: space-evenly;
+  padding: 30px 0; 
+  border-bottom: 8px solid #846D62;
+}
+
+.icono-empresa {
+  margin-top: 60px; 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+}
+
+#quienesSomos .texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  text-align: initial;
+  padding: 0 30px;
+}
+
+.bi-buildings {
+  fill: rgb(132, 109, 98);
+}
+
+/*Footer*/
+
+footer {
+  background-color: #FDF7F2;
+  color: rgb(132, 109, 98);
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-media {
+  margin-top: 10px;
+}
+
+.social-media a {
+  margin-right: 15px; /* Ajusta la cantidad de espacio entre los íconos según sea necesario */
+  text-decoration: none;
+  color: inherit; 
+}
+
+/* Responsive navbar */
+@media (max-width: 768px) {
+  .navbar {
+      flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas más pequeñas */
+  }
+
+  .navbar-section {
+      width: 100%;
+      justify-content: center;
+  }
+
+  .links {
+      justify-content: space-around;
+  }
+
+  .links a {
+      padding: 10px;
+      margin: 0; /* Elimina márgenes en pantallas pequeñas */
+  }
+}
+
+/* Responsive btnes-cata */
+@media (max-width: 768px) {
+  #btnesCata {
+      flex-direction: column; /* Cambia la disposición a vertical */
+      align-items: center; /* Centra los elementos */
+  }
+
+  .image {
+      width: 100%; /* Cada imagen ocupará todo el ancho del contenedor */
+      margin-bottom: 20px; /* Añade espacio entre las imágenes */
+      position: relative;
+  }
+
+  .image img {
+      height: auto; /* Permite que la altura de las imágenes sea automática */
+      filter: blur(8px); /* Aplica un filtro borroso a las imágenes */
+      transition: filter 0.5s ease; /* Agrega una transición suave al cambiar el filtro */
+  }
+
+  .image .title {
+      position: absolute; /* Permite posicionar el título sobre la imagen */
+      top: 50%; /* Centra el título verticalmente */
+      left: 50%; /* Centra el título horizontalmente */
+      transform: translate(-50%, -50%); /* Ajusta la posición del título para centrarlo */
+      color: white; /* Establece el color del texto a blanco */
+      font-size: 1.5rem; /* Ajusta el tamaño del texto */
+      text-align: center; /* Centra el texto */
+      width: 100%; /* Asegura que el título ocupe todo el ancho del contenedor */
+      visibility: visible; /* Asegura que el título sea visible */
+      opacity: 1; /* Asegura que el título sea completamente opaco */
+  }
+
+  .image a:hover img {
+      filter: blur(0); /* Elimina el filtro borroso cuando se pasa el mouse sobre la imagen */
+  }
+}
+
+/* Responsive Quienes somos */
+
+@media (min-width: 768px) {
+  #quienesSomos .container {
+      flex-wrap: nowrap;
+  }
+
+  #quienesSomos .icono-empresa,
+  #quienesSomos .texto {
+      flex: 1 1 auto;
+      text-align: left;
+  }
+
+  #quienesSomos .icono-empresa {
+      margin-bottom: 0;
+  }
+}

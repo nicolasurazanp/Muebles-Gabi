@@ -1,0 +1,429 @@
+body {
+    background-color: #FDF7F2;
+}
+
+.lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+header {
+    border-bottom: 8px solid #846D62;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FDF7F2;
+    padding: 0 10px;
+  
+  }
+  
+  .navbar-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .links {
+    justify-content: center;
+    flex-grow: 1;
+  }
+  
+  .links a {
+    display: block;
+    color: #846D62;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    margin: 30px;
+  }
+  
+  .links a:hover {
+    font-size: 18px;
+    font-weight: bold;
+    color: #846D62;
+  }
+  
+  .Logo {
+    width: 140px;
+    height: 120px;
+}
+  
+  .ui.animated.button {
+    background-color: transparent;
+  }
+  
+  /* Tipo Sala */
+   .tipo-sala{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #846D62;
+    font-size: bold;
+   }
+
+   /* Estilo para el menú desplegable */
+
+.dropdown-menu[data-bs-popper]{
+    background-color: #FDF7F2;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+}
+
+/* Centrar los enlaces en el menú desplegable */
+.dropdown-menu {
+    text-align: center; /* Centra el contenido de la lista desplegable */
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%; /* Asegura que el enlace ocupe todo el ancho del menú */
+    padding: 12px 0; /* Establece el relleno arriba y abajo para separar los enlaces */
+}
+
+.dropdown-item:hover {
+    font-size: initial !important;  /* Restaura el tamaño original */
+    font-weight: normal !important; /* Restaura el peso original */
+    color: #846D62 !important;     /* Mantiene el color especificado */
+}
+
+.dropdown-menu { 
+    --bs-dropdown-link-hover-color: var(--bs-body-color) !important;
+    --bs-dropdown-link-hover-bg: unset !important;
+}
+
+
+
+/* Estilos para los elementos de la lista desplegable */
+.dropdown-item {
+    width: auto; /* Evita que el elemento ocupe todo el ancho del menú */
+    padding: 8px 16px; /* Ajusta el relleno si es necesario */
+}
+
+
+
+
+/*Footer*/
+
+footer {
+  background-color: #FDF7F2;
+  color: rgb(132, 109, 98);
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-media {
+  margin-top: 10px;
+}
+
+.social-media a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: inherit; 
+}
+
+/* Enlace Compra*/
+.enlace-compra{
+    border: none;
+    background: none;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block; 
+    width: 100%; 
+    text-align: center; 
+}
+
+
+
+
+/* Globales */
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: 'Lato';
+    color: #333;
+}
+
+.icon-cart{
+    width: 40px;
+    height: 40px;
+    stroke: #000;
+}
+
+.icon-cart:hover{
+    cursor: pointer;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+
+.container-cart-products{
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+    
+}
+
+.cart-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+
+}
+
+.info-cart-product{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+}
+
+.titulo-producto-carrito{
+    font-size: 20px;
+}
+
+.precio-producto-carrito{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.cantidad-producto-carrito{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.icon-close{
+    width: 25px;
+    height: 25px;
+}
+
+.icon-close:hover{
+    stroke: red;
+    cursor: pointer;
+}
+
+.cart-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.cart-total h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.total-pagar{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.hidden-cart{
+    display: none;
+}
+
+
+
+
+/* Main */
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.item{
+    border-radius: 10px;
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item figure{
+    overflow: hidden;
+}
+
+.item:hover img{
+    transform: scale(1.2);
+}
+
+.info-product{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.price{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+#sala-Dway{
+    border-bottom: 8px solid #846D62;
+}
+
+#sala-ferrari{
+    border-bottom: 8px solid #846D62;
+}
+#sala-Cubito{
+    border-bottom: 8px solid #846D62;
+}
+#sala-Huevo{
+    border-bottom: 8px solid #846D62;
+}
+#comedor-Ahorra{
+    border-bottom: 8px solid #846D62;
+}
+
+#comedor-Deco{
+    border-bottom: 8px solid #846D62;
+}
+#comedor-Cedro{
+    border-bottom: 8px solid #846D62;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FDF7F2;
+    padding: 0 10px;
+}
+
+.navbar-section {
+    display: flex;
+    align-items: center;
+}
+
+.Logo {
+    width: 100px; /* Reducido de 140px a 100px */
+    height: auto; /* Cambio a auto para mantener la proporción */
+}
+
+.links {
+    display: flex; /* Asegura que los links también se alineen horizontalmente */
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.links a {
+    color: #846D62;
+    text-align: center;
+    padding: 20px 10px; /* Ajustado para menos espacio horizontal */
+    text-decoration: none;
+}
+
+.links a:hover {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas más pequeñas */
+    }
+
+    .navbar-section {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .links {
+        justify-content: space-around;
+    }
+
+    .links a {
+        padding: 10px;
+        margin: 0; /* Elimina márgenes en pantallas pequeñas */
+    }
+}
+
+/* Responsive cartas */
+@media (max-width: 768px) {
+    /* Ajusta el diseño de container-items para mostrar una imagen por fila */
+    .container-items {
+        grid-template-columns: 1fr;
+    }
+
+    /* Ajusta el tamaño de las imágenes si es necesario */
+    .item img {
+        height: 250px;
+    }
+    .tipo-sala{
+        margin-left:10px;
+    }
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    #Contacto {
+        padding: 10px; /* Ajusta el padding */
+    }
+
+    .contact-info {
+        text-align: center; /* Centra el texto */
+    }
+
+    .social-media {
+        display: column;
+        justify-content: center; /* Centra los íconos */
+        margin-top: 10px;
+    }
+
+    .social-media a {
+        margin: 0 5px; /* Ajusta el espacio entre los íconos */
+    }
+}
